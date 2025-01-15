@@ -4,15 +4,12 @@ pragma solidity ^0.8.7;
 import {Test} from "forge-std/Test.sol";
 import {console} from "forge-std/console.sol";
 import {Stake} from "../src/StakeContract.sol";
-import {StakingToken} from "../src/StakingToken.sol";
 
 contract TestStakeContract is Test {
     Stake stakeContract;
-    StakingToken stakingToken;
 
     function setUp() public {
         stakeContract = new Stake();
-        stakingToken = new StakingToken();
     }
 
     receive() external payable {}
