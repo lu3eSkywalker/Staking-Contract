@@ -11,5 +11,6 @@ Additionally, users will earn extra liquidity tokens as a reward for keeping the
 ![Image](https://github.com/user-attachments/assets/cb8f2b2e-8c41-4711-8e07-72664cb04bc7)
 
 
-<img src="https://github.com/user-attachments/assets/63553e31-3c7a-4dc6-a3bd-abef84cf649f" alt="Staking Reward" width="500" />
-<img src="https://github.com/user-attachments/assets/cb8f2b2e-8c41-4711-8e07-72664cb04bc7" alt="Implementation Architecture" width="500" />
+<img src="https://github.com/user-attachments/assets/63553e31-3c7a-4dc6-a3bd-abef84cf649f" alt="Staking Reward" width="750" />
+<br />
+<img src="https://github.com/user-attachments/assets/cb8f2b2e-8c41-4711-8e07-72664cb04bc7" alt="Implementation Architecture" width="750" />
