@@ -1,8 +1,8 @@
 # Staking Contract
 
 ### Approach:
-Users will come and deposit ETH in this staking contract. Users can't withdraw their
-staked ETH before 21 days. And After 21 days, the users would get a new ERC20 staking token in their account.
+Users can deposit ETH in the staking contract. Users can't withdraw their 
+staked ETH before 21 days. And After 21 days, the users would get a new ERC20 staking token.
 
 
 ## Architecture of the Implementation
