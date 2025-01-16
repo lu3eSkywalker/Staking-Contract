@@ -1,66 +1,11 @@
-## Foundry
+## Stake Contract
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+### Approach
+In this Staking Contract, users can deposit ETH and receive liquidity tokens minted to their accounts as a representation of their stake. 
+Additionally, users will earn extra liquidity tokens as a reward for keeping their ETH staked in the contract.
 
-Foundry consists of:
+### Staking Reward
+![Image](https://github.com/user-attachments/assets/63553e31-3c7a-4dc6-a3bd-abef84cf649f)
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+### Implementation Architecture
+![Image](https://github.com/user-attachments/assets/cb8f2b2e-8c41-4711-8e07-72664cb04bc7)
