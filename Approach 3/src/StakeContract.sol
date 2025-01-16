@@ -3,12 +3,10 @@ pragma solidity ^0.8.13;
 
 import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import {console} from "forge-std/console.sol";
 
 contract Stake is ERC20 {
     address public tokenAddress;
     uint256 public totalStaked;
-    mapping(address => uint) stakedTime;
     mapping(address => uint256) public tokenBalanceOfUser;
 
     event tokenStakedEvent(address staker, uint256 tokenValue);
