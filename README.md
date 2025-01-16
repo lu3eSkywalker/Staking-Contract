@@ -6,7 +6,7 @@ In this Repo, we make different kinds of staking contract.
 #### Approach 1:
 Issues users an ERC-20 token based on the time they are staking ETH.
 ##### Implementation Architecture:
-<img src="https://github.com/user-attachments/assets/98b5b67d-2d69-4af1-91cc-2a2992e8b8cd" alt="Implementation Architecture" width="700" />
+<img src="https://github.com/user-attachments/assets/f578db69-aaf2-4a46-8c25-32963c305a43" alt="Implementation Architecture" width="750" />
 
 
 #### Approach 2:
