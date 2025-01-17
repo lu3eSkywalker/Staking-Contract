@@ -10,6 +10,9 @@ contract Stake is ERC20 {
 
     uint public locking_period = 1814400; // 21 days in seconds
 
+    event ETHStaked(address staker, uint256 _stakingValue);
+    event ETHUnstaked(address unstaked, uint256 _unstakingValue);
+
     constructor() ERC20("StakingToken", "STAKE") {}
 
     function stake(uint256 _amount) public payable {
@@ -18,6 +21,8 @@ contract Stake is ERC20 {
         totalStaked += _amount;
         userBalance[msg.sender] += _amount;
         stakedTime[msg.sender] = block.timestamp;
+
+        emit ETHStaked(msg.sender, _amount);
     }
 
     function pingForGettingRewards() public {
@@ -40,6 +45,8 @@ contract Stake is ERC20 {
         userBalance[msg.sender] -= _amount;
         stakedTime[msg.sender] = block.timestamp;
         payable(msg.sender).transfer(_amount);
+
+        emit ETHUnstaked(msg.sender, _amount);
     }
 
     function mintTokens(uint256 _amount, address toMintAccount) internal {
