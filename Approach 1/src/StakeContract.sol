@@ -13,6 +13,9 @@ contract Stake is ERC20 {
     uint256 reward_constant = 1 ;
     uint public token_time = 604800; // 7 days in seconds
 
+    event ETHStaked(address staker, uint256 _stakingValue);
+    event ETHUnstaked(address unstaked, uint256 _unstakingValue);
+
     constructor() ERC20("StakingToken", "STAKE") {}
 
     function stake(uint256 _amount) public payable {
@@ -22,6 +25,8 @@ contract Stake is ERC20 {
         userBalance[msg.sender] += _amount;
         mintTokens(_amount, msg.sender);
         stakedTime[msg.sender] = block.timestamp;
+
+        emit ETHStaked(msg.sender, _amount)
     }
 
     function pingForGettingReward() public {
@@ -42,6 +47,8 @@ contract Stake is ERC20 {
         totalStaked -= _amount;
         userBalance[msg.sender] -= _amount;
         payable(msg.sender).transfer(_amount);
+
+        emit ETHUnstaked(msg.sender, _amount);
     }
 
     function mintTokens(uint256 _amount, address toMintAccount) public {
